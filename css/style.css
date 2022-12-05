@@ -5,6 +5,20 @@ body{
     background-color: 	#F8C8DC;
 }
 
+div.skip a{
+    position: absolute;
+    top: -40px
+}
+
+div.skip a:focus{
+    top: 10px;
+}
+
+p{
+    text-align: center;
+    margin: 5px;
+}
+
 h1{
     font-size: 75px;
     text-align: center;
