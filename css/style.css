@@ -1,15 +1,17 @@
 body{
 	margin:1%;
 	padding:1%;
-	font-size:150%;
+	font-size: 125%;
+    background-color: 	#F8C8DC;
 }
 
 h1{
-    font-size: 100px;
+    font-size: 75px;
     text-align: center;
 }
 img{
-    height: 200px;
+    /* max-width: 250px; */
+    height: 250px;
 }
 .image1{
 
@@ -19,14 +21,14 @@ img{
 }
 
 .active{
-    background-color: pink;
+    /* background-color: pink; */
     text-transform: uppercase;
 }
 
 nav li{
-    padding:10px;
-	width:25%;
-	border:3px solid lightblue;
+    padding:12px 12px 12px 12px;
+	width: 25%;
+	border:3px solid white;
 	display: inline-block;
 	width: 20%;
     text-align: center;
@@ -34,3 +36,166 @@ nav li{
 a:visited{
     color: black;
 }
+
+.container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/harry1.webp");
+    height: 25%;
+    border: 5px solid white;
+}
+.overview{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 65px 200px 800px 200px;
+}
+.information{
+    color: white;
+    text-align: right;
+    font-weight: bold;
+    padding: 0px 10px 500px 500px;
+}
+.container2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    align-items: center;
+}
+.container2 img{
+    margin: auto;
+    display: block;
+}
+
+.textbox{
+    border: 5px solid black;
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+
+.container3{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container3 div{
+    margin: auto;
+}
+
+.container3 img{
+    display: block;
+    align-content: center;
+    border: 5px dotted white;
+}
+
+.fadein{
+    position:relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    height: 155px;
+    width: 200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: lightblue;
+    border: 1px solid darkblue;
+}
+
+.firstclass1:hover .fadein{
+    opacity: 1;
+}
+.secondclass1:hover .fadein{
+    opacity: 1;
+}
+.thirdclass1:hover .fadein{
+    opacity: 1;
+}
+.fourthclass1:hover .fadein{
+    opacity:1
+}
+.fifthclass1:hover .fadein{
+    opacity: 1;
+}
+.sixthclass1:hover .fadein{
+    opacity: 1;
+}
+.sevclass1:hover .fadein{
+    opacity: 1;
+}
+.eightclass1:hover .fadein{
+    opacity: 1;
+}
+.ninclass1:hover .fadein{
+    opacity: 1;
+}
+.eleclass1:hover .fadein{
+    opacity: 1;
+}
+.twelclass1:hover .fadein{
+    opacity: 1;
+}
+.thirtclass1:hover .fadein{
+    opacity: 1;
+}
+
+.text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h2{
+    font-size: 35px;
+    text-align: center;
+    font-style: italic;
+}
+
+h3{
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+}
+
+.container4{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.container4 div{
+    margin: auto;
+}
+.container4 img:hover{
+    position: relative;
+    border:5px double darkblue;
+}
+.lottext{
+    border: 3px solid black;
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px){
+    .container2, .container3{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .container2, .container3{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .container4{
+        justify-content: space-between;
+    }
+}
+
